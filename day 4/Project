@@ -1,0 +1,29 @@
+pragma solidity ^0.4.17 <0.7.0;
+
+contract studentDetails {
+    
+    string Name;
+    uint RollNo;
+    uint  Batch;
+    uint  Marks;
+    string  Status;
+    
+    
+    function Student(string newname,uint newRollnumber, uint newBatch,uint newmarks,string newstatus) public{
+        Name=newname;
+        RollNo=newRollnumber;
+        Batch=newBatch;
+        Marks=newmarks;
+        Status=newstatus;
+}
+
+    function Studentdetails() public view returns(string,uint,uint,uint,string) {
+         return(Name,RollNo,Batch,Marks,Status); 
+}
+
+}
+
+
+you can check out @ 0xfe96c346995d180a4efd4deb14b299848fd47138
+
+https://ropsten.etherscan.io/tx/0x6557b74eef8e18cfc335cd2ec58b7def181c38d6be7e211daeaef84b78199bcc
